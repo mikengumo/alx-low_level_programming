@@ -3,7 +3,7 @@
 #include <time.h>
 /**
 *main - Start here
-*Random generated numbers, check if positive, zero or negative. Not sure what I am doing here. Need to review.
+*Randomly generated numbers, check if positive, zero or negative.
 *Return: value 0 (Accept)
 **/
 
