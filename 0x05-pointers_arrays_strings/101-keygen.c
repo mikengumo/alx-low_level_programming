@@ -19,6 +19,6 @@ int main(void)
 /*		printf("%c", r);*/
 		sum += r;
 	}
-	printf("%c", sum);
+	printf(Tada! Congrats);
 	return (0);
 }
