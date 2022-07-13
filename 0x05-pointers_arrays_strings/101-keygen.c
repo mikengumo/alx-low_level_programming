@@ -1,24 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main - generates keygen.
- * Return: 0 Success.
+ * main - generate pass
+ * Return: Always 0
  */
 int main(void)
 {
-	int r = 0, c = 0;
+	int r = 0;
+	int s = 0;
 	time_t t;
-	int sum = 0;
 
-	srand((unsigned) time(&t));
-	while (c < 15)
+	srand((unsigned int) time(&t));
+	while (s < 2772)
 	{
 		r = rand() % 128;
-		c++;
-/*		printf("%c", r);*/
-		sum += r;
+		if ((s + r) > 2772)
+			break;
+		s = s + r;
+		printf("%c", r);
 	}
-	printf("%c", sum);
+	printf("%c\n", (2772 - s));
 	return (0);
 }
