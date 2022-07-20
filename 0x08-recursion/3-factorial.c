@@ -1,3 +1,4 @@
+/**
  * factorial - returns factorial
  * @n: Factorial Integer
  * Return: Factorial
